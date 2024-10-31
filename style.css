@@ -1,0 +1,61 @@
+* {
+box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: auto;
+    /* font: roboto? */
+}
+    .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(101, 91, 146);
+
+        .left-header {
+
+            .logo {
+                width: 40px;
+            }
+        }
+
+        .right-header ul {
+            display: flex;
+            gap: 25px;
+
+        }
+    }
+
+    .pitch {
+
+    }
+
+    .items {
+
+    }
+
+    .quote {
+
+    }
+
+    .action {
+
+    }
+
+    .footer {
+
+    }
+}
