@@ -1,6 +1,9 @@
 * {
 box-sizing: border-box;
+font-family: 'Roboto'
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 ul {
     list-style: none;
@@ -9,46 +12,152 @@ ul {
 
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(249, 250, 248);
 }
 
 body {
     display: flex;
     flex-flow: column nowrap;
     margin: auto;
-    /* font: roboto? */
+    color: rgb(249, 250, 248);
 }
+
     .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    background-color: rgb(101, 91, 146);
-
-        .left-header {
-
-            .logo {
-                width: 40px;
-            }
-        }
-
-        .right-header ul {
-            display: flex;
-            gap: 25px;
-
-        }
+    background-color: rgb(31, 41, 55);
     }
+
+.left-header {
+align-items: center;
+display: flex;
+flex-flow: column nowrap;
+}
+
+.logo {
+    width: 40px;
+ }
+
+ .right-header ul {
+    display: flex;
+     gap: 30px;
+ }
+
+
+
+
+
+
+
+
+
+
 
     .pitch {
+        background-color: rgb(31, 41, 55);
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    
+    }
+
+    .earth {
+        align-self: center;
+    }
+.earth img {
+    width: 400px;
+    height: 400px;
+
+}
+    
+    .left-pitch {
+        display: flex;
+        flex-flow: column wrap;
+        margin: 10px;
+        flex: 1;
+        max-width: 700px;
+    }
+    
+    .title {
+        font-weight: 900;
+        font-size: 48px;
+    }
+    
+    .text-disclamer {
+        font-size: 18px;
+    }
+
+    .donation-links {
+        flex: auto;
+        background-color: rgba(0, 62, 0, 0.663);
+        padding: 10px;
+        max-width: 250px;
+        text-decoration: underline;
+        border: 1px dashed;
+        border-radius: 25px;
+    }
+    
+    .donation-links ul {
+        gap: 10px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    button {
+        background-color: rgb(56, 130, 246);
+        border-radius: 5px;
+        width: 100px;
+        height: 30px;
+        font-weight: bold;
+    }
+    
+
+    .items {
+    color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
 
     }
 
-    .items {
+    .items h2 {
+        font-size: 36px;
+        color: #1f2937;
+        font-weight: 900;
+    }
 
+    .plushies {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: top;
+    }
+
+    
+    .plush a {
+        text-decoration: none;
+        color: rgb(112, 108, 108);
+    }
+
+    .plush {
+        max-width: 250px;
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 10px;
+    }
+
+    .plush img {
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+        border: 3px solid rgb(56, 130, 246);
+        margin: 10px auto;
     }
 
     .quote {
-
+        background-color: #e5e7eb;
     }
 
     .action {
@@ -58,4 +167,3 @@ body {
     .footer {
 
     }
-}
